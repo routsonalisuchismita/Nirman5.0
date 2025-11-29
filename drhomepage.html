@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Patient home page</title>
+
+    <body>
+        <img src="logo.jpg" alt="logo" class="small-logo">
+        <link rel="stylesheet" href="style6.css">
+        <div class="dashboard-container">
+            <header class="dashboard-header">
+                <h1>Welcome! Dr. Preeti Nayak</h1>
+                <p>Sunday, November 29, 2025 | 1:27 PM</p>
+                <p>Here is your patients overview</p>
+            </header>
+
+            <div class="content-grids">
+                <div class="card quick-statistics">
+                    <h3>Quick Statistics</h3>
+                    <div class="stat-item">
+                        <i class="icon"></i> Total Patients: <span>7</span>
+                    </div>
+                    <div class="stat-item high-severity">
+                        <i class="icon"></i> High Severity: <span>2</span>
+                    </div>
+                </div>
+                <form action="/action.php">
+                    <div class="card alerts">
+                        <h3>Alerts</h3>
+                        <ul>
+                            <li><i class="icon"></i> P1044 Geetanjali Sahu: High Tremor Spike (10.15 AM)</li>
+                            <!-- <li><i class="icon">⚙</i> (View All Alerts)</li> -->
+                            <li>
+                                <button class="View All Alerts">View All Alerts</button>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="card patients-list">
+                <h3>Patients List</h3>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Patient Name or ID...">
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Patient ID</th>
+                            <th>Device Connected Date</th>
+                            <th>Last Reading</th>
+                            <th>View Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ram Singh</td>
+                            <td>P1023</td>
+                            <td>27-11-2025</td>
+                            <td class="status-normal">Normal</td>
+                            <td><button class="status-button">View Status</button></td>
+                        </tr>
+                        <tr>
+                            <td>Geetanjali Sahu </td>
+                            <td>P1044</td>
+                            <td>28-11-2025</td>
+                            <td class="status-high">High Tremor</td>
+                            <td><button class="status-button">View Status</button></td>
+                        </tr>
+                        <tr>
+                            <td>Priya Sharma</td>
+                            <td>P1030</td>
+                            <td>25-11-2025</td>
+                            <td class="status-moderate">Moderate</td>
+                            <td><button class="status-button">View Status</button></td>
+                        </tr>
+                        <tr>
+                            <td>Ashish Rout</td>
+                            <td>P1025</td>
+                            <td>19-11-2025</td>
+                            <td class="status-normal">Normal</td>
+                            <td><button class="status-button">View Status</button></td>
+                        </tr>
+                        <tr>
+                            <td>Arun Sharma</td>
+                            <td>P1028</td>
+                            <td>15-11-2025</td>
+                            <td class="status-moderate">Moderate</td>
+                            <td><button class="status-button">View Status</button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</head>
+
+</html>

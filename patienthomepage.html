@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style7.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <img src="logo.jpg" alt="logo" class="small-logo">
+    <header>
+        <h1>🩺 Parkinson's Monitoring Dashboard</h1>
+    </header>
+
+    <div class="dashboard">
+
+        <!-- Patient Info -->
+        <div class="card big-card">
+            <h2>Patient Details</h2>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Age:</strong> 72</p>
+            <p><strong>Stage:</strong> Parkinson’s Stage 2</p>
+            <p><strong>Last Check-up:</strong> 22 Nov 2025</p>
+            <p><strong>Device:</strong> <span class="connected">Connected</span></p>
+        </div>
+
+        <!-- Today's Status -->
+        <div class="card">
+            <h2>Today's Status</h2>
+            <p class="status moderate">Moderate Tremor</p>
+        </div>
+
+        <!-- Real-time Tremor Graph -->
+        <div class="card graph-card">
+            <h2>Real-Time Tremor Intensity</h2>
+            <canvas id="tremorGraph"></canvas>
+        </div>
+
+        <!-- Weekly Trend Graph -->
+        <div class="card graph-card big-card">
+            <h2>Weekly Tremor Trend</h2>
+            <canvas id="weeklyGraph"></canvas>
+        </div>
+
+        <!-- Sensor Signal -->
+        <div class="card graph-card">
+            <h2>Real-Time Sensor Signal</h2>
+            <canvas id="signalGraph"></canvas>
+        </div>
+
+        <!-- Alerts -->
+        <div class="card alert-card">
+            <h2>⚠ Alert</h2>
+            <p class="alert-text">High Tremor Activity Detected</p>
+        </div>
+
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
